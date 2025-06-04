@@ -155,4 +155,4 @@ A integração com Stripe é feita tanto no front quanto no back-end. Certifique
 ## Contato
 
 Projeto feito para fins educacionais e como portfólio.  
-Entre em contato via [LinkedIn]([https://www.linkedin.com/in/matheus-fernandes-55b341277/]) ou abra uma issue para dúvidas ou sugestões.
+Entre em contato via [LinkedIn](https://www.linkedin.com/in/matheus-fernandes-55b341277/) ou abra uma issue para dúvidas ou sugestões.
