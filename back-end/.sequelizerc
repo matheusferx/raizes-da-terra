@@ -1,0 +1,10 @@
+const path = require('path');
+
+// Define os caminhos para o arquivo de configuração do banco e para as migrations.
+// É usado automaticamente pelo Sequelize CLI para executar comandos como:
+// `npx sequelize db:migrate`
+
+module.exports = {
+    config: path.resolve(__dirname, 'src', 'config', 'database.js'),
+    'migrations-path': path.resolve(__dirname, 'src', 'database', 'migrations')
+}
