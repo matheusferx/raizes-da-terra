@@ -23,8 +23,8 @@ const createCheckoutSession = async (req, res) => {
         },
       ],
       mode: 'payment',      // Tipo de sessão: pagamento único
-      success_url: 'http://localhost:5173/sucesso',
-      cancel_url: 'http://localhost:5173/cancelado',
+      success_url: 'https://raizes-da-terra.vercel.app/sucesso',
+      cancel_url: 'https://raizes-da-terra.vercel.app/cancelado',
     })
 
     res.json({ url: session.url })
