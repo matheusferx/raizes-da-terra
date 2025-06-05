@@ -152,6 +152,9 @@ A integração com Stripe é feita tanto no front quanto no back-end. Certifique
 
 ---
 
+## Segue o Link do deploy
+[Raizes-da-terra](https://raizes-da-terra.vercel.app/)
+
 ## Contato
 
 Projeto feito para fins educacionais e como portfólio.  
