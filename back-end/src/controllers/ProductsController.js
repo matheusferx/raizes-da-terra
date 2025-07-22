@@ -21,6 +21,7 @@ const getProductById = async (req, res) => {
     }
     return res.status(200).json(product);
   } catch (error) {
+    console.error('Error fetching product by ID:', error);
     return res.status(500).json({ error: 'Internal server error' });
   }
 }
@@ -36,6 +37,7 @@ const getProductByCategory = async (req, res) => {
     }
     return res.status(200).json(products);
   } catch (error) {
+    console.error('Error fetching products by category:', error);
     return res.status(500).json({ error: 'Internal server error' });
   }
 }
@@ -64,6 +66,7 @@ const deleteProduct = async (req, res) => {
     await product.destroy();
     return res.status(204).send();
   } catch (error) {
+    console.error('Error deleting product:', error);
     return res.status(500).json({ error: 'Internal server error' });
   }
 }
