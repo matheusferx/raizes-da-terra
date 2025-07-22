@@ -16,7 +16,8 @@ class Products extends Model {
             },
             {
                 sequelize,
-                modelName: 'products',
+                modelName: 'Products', // Nome do model em maiúsculo (convenção)
+                tableName: 'products', // Nome real da tabela no banco
                 timestamps: true,
             }
         );

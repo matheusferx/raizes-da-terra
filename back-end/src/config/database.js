@@ -7,8 +7,9 @@ module.exports = {
   password: process.env.SENHA_DB,
   database: process.env.NOME_DB,
   host: process.env.HOST_DB,
+  port: process.env.PORTA_DB || 5432,
   dialect: 'postgres',
-
+  
   // Opções específicas do PostgreSQL para habilitar SSL
   dialectOptions: {
     ssl: {

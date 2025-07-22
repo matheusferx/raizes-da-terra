@@ -1,10 +1,12 @@
 const express = require('express')
 const routes = require('./routes')
 const cors = require('cors')
+const dotenv = require('dotenv')
 require('./database') // Isso garante que a conexão e os models sejam inicializados
 
 //  Configura o servidor Express, habilita CORS, carrega rotas e inicia o backend.
 const app = express()
+dotenv.config() // Carrega as variáveis de ambiente do arquivo .env
 app.use(express.json()) // Middleware para interpretar requisições com JSON
 app.use(cors()) // Middleware para habilitar o CORS e permitir requisições do frontend
 

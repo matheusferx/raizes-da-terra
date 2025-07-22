@@ -6,6 +6,7 @@ const getAllProducts = async (req, res) => {
     const products = await Products.findAll();
     return res.status(200).json(products);
   } catch (error) {
+    console.error('Erro ao buscar produtos:', error)
     return res.status(500).json({ error: 'Internal server error'});
   }
 }

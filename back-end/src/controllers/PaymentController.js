@@ -1,6 +1,6 @@
 // Importa a instância configurada do Stripe
 const stripe = require('../services/stripe')
-const Products  = require('../models/Products')
+const Products  = require('../models/Products.js')
 
 // Controlador para criar uma sessão de checkout com Stripe de acordo com Id do produto
 const createCheckoutSession = async (req, res) => {
